@@ -1,0 +1,46 @@
+mutation{
+    createUser(input: {name: "sangjin" }) {
+        user {
+            id
+            name
+        }
+    }
+}
+
+query{
+    users{
+        id
+        name
+    }
+}
+
+
+query{
+    menus{
+        id
+        name
+    }
+}
+
+{
+    "data": {
+        "menus": [
+            {
+                "id": "1",
+                "name": "음료"
+            },
+            {
+                "id": "2",
+                "name": "푸드"
+            },
+            {
+                "id": "3",
+                "name": "상품"
+            },
+            {
+                "id": "4",
+                "name": "카드"
+            }
+        ]
+    }
+}
